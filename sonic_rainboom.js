@@ -4,7 +4,7 @@ function sonic_rainboom(image_path, by_char) {
     #sr_backdrop{position: fixed; top: 0; left: 0; background: #96dff0; width: 100%}\
     #sr_backdrop img{width: 100%}\
     </style>');
-  $('body').append('<div id="sr_backdrop"><img src="'+(image_path || 'rainbow-dash.gif')+'"></div>');
+  $('body').append('<div id="sr_backdrop"><img src="'+(image_path || 'https://raw.github.com/joelcogen/sonic-rainboom-js/master/rainbow-dash.gif')+'"></div>');
   $('#sr_backdrop').height($(window).height());
   setTimeout(function(){ $('#sr_backdrop').remove() }, 1200);
   _sr_sonic_rec($('body'), by_char);
